@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MefTrial", "MefTrial\MefTrial.csproj", "{7C3DB1F2-EED8-42F5-974B-6E0A92809FD5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MefAuthentication", "MefAuthentication\MefAuthentication.csproj", "{6D670CD5-876D-461A-9126-6B5523194175}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MefShared", "MefInterface\MefShared.csproj", "{4BA13DB1-0ACE-415C-ACD2-FDA41C58A1CB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C3DB1F2-EED8-42F5-974B-6E0A92809FD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C3DB1F2-EED8-42F5-974B-6E0A92809FD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C3DB1F2-EED8-42F5-974B-6E0A92809FD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C3DB1F2-EED8-42F5-974B-6E0A92809FD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D670CD5-876D-461A-9126-6B5523194175}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D670CD5-876D-461A-9126-6B5523194175}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D670CD5-876D-461A-9126-6B5523194175}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D670CD5-876D-461A-9126-6B5523194175}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BA13DB1-0ACE-415C-ACD2-FDA41C58A1CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BA13DB1-0ACE-415C-ACD2-FDA41C58A1CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BA13DB1-0ACE-415C-ACD2-FDA41C58A1CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BA13DB1-0ACE-415C-ACD2-FDA41C58A1CB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
