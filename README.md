@@ -36,3 +36,7 @@ In the following example, the line `[Export(typeof(IAuthenticationManager))]` in
  [ExportMetadata("AuthenticationType", "1")]
  public class FirstAuthentication : IAuthentication
 ```
+
+### How to extend the code?
+
+As there are two important attributes `Import` and `Export` (with their metadata attributes), to add new bindings, we just need to define the property with `Import` attribute and the implementation with `Export` attribute. Whenever MEF composes the class with `Import` attribute, it will automatically inject the dependency 
