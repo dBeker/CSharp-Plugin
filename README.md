@@ -20,7 +20,8 @@ In this example, there are three projects.
 * <b>MefAuthentication</b> : This is the implementation of contracts defined in <b>MefInterface</b>.
  
 
-To define which method is implementation of an interface, two attributes are used: `ImportAttribute` and `ExportAttribute`.
+To define the bindings for MEF, two attributes are used: `ImportAttribute` and `ExportAttribute`.
+
 In the following example, the line `[Import(typeof(IAuthenticationManager))]` informs that Authentication object has to be initialized with type `IAuthenticationManager` while composing the class. If a property is marked to be imported, the property has to be public.
 
 ```
@@ -28,3 +29,10 @@ In the following example, the line `[Import(typeof(IAuthenticationManager))]` in
   public IAuthenticationManager Authentication;
 ```
 
+In the following example, the line `[Export(typeof(IAuthenticationManager))]` informs that the class `FirstAuthentication` is an implementation of type `IAuthentication`. The attribute `ExportMetadata` is used to describe the implementation specific data. By using this data, without knowing the implementation class name, MEF can call correct binding.
+
+```
+ [Export(typeof(IAuthentication))]
+ [ExportMetadata("AuthenticationType", "1")]
+ public class FirstAuthentication : IAuthentication
+```
